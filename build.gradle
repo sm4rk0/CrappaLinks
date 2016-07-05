@@ -10,8 +10,12 @@ buildscript {
 }
 apply plugin: 'com.android.application'
 
+repositories {
+    jcenter();
+}
+
 dependencies {
-    provided files('libs/XposedBridgeApi-54.jar')
+    provided 'de.robv.android.xposed:api:82'
     compile 'org.jsoup:jsoup:1.7.3'
 }
 
